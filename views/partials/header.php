@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>imjord sessions</title>
+    <title><?= $title ?></title>
 </head>
 <body>
 <nav>
@@ -16,7 +16,7 @@
     </div>
     <div>
     <ul>
-        <li><a href="/login">Login</a></li>
+        <?= $loggedIn ? '<li><a href="/account">Account</a></li> <li><a href="/logout">Logout</a></li>' : '<li><a href="/login">Login</a></li>' ?>
     </ul>
 </nav>
 
